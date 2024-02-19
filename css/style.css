@@ -9,10 +9,28 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.header {
+header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+header.image {
+    height: 20px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding: 0;
+    list-style: none;
+}
+
+nav ul{
+    display:flex;
+    height: 70px;
 }
 
 h1 {
@@ -39,6 +57,7 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    margin: auto;
 }
 
 .section-title {
