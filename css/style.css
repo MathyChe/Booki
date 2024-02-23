@@ -9,6 +9,12 @@
     --filter-bg-color: #DEEBFF;
 }
 
+li {
+    list-style: none;
+}
+
+/**********HEADER**********/
+/*logo, nav bar*/
 header {
     display: flex;
     justify-content: space-between;
@@ -22,7 +28,7 @@ header {
     padding: 30px 0 30px 0;
 }
 
-ul{
+.navbar{
     display: flex;
     justify-content: space-between;
     width: 244px;
@@ -31,17 +37,99 @@ ul{
     padding-left: 50px;
 }
 
-li{
+.navitem{
     display: flex;
-    list-style: none;
     padding-top: 16px;
     border-top: 2px transparent solid;
 }
 
-li:hover{
+.navitem:hover{
     color:#0065FC;
     border-top: 2px #0065FC solid;
 }
+
+/**********UPPER BODY**********/
+/*title, hookline, searchbar, filters, hintline*/
+.searchbar {
+    display:flex;
+    height: 49px;
+    width: 377px;
+    align-items: center;
+    margin: 35px 0 35px 0;
+}
+
+.fa-location-dot {
+    display:flex;
+    max-height: 18px;
+    max-width: 14px;
+    padding: 16px 18px 16px 18px;
+    color: initial !important;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+input {
+    border-radius: 0%;
+    height: 49px;
+    width: 193.4px;
+    margin: 0;
+    padding: 0;
+    border: 1px #F2F2F2 solid;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+::placeholder {
+    opacity: 1;
+    color: black;
+    text-align: center;
+}
+
+button {
+    background-color: #0065FC;
+    height: 49px;
+    width: 132px;
+    padding: 15px 16px 15px 16px;
+    border: 1px #0065FC solid;
+    border-radius: 0 15px 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.filtersbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 758px;
+    height: 50px;
+}
+
+.filterstitle {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filtersitem {
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 19px 4px 19px;
+    border: 2px #D2D2D2 solid;
+    border-radius: 25px;
+}
+
+.filtersicon {
+    margin: 10px;
+    width: 22px;
+    height: 22px;
+}
+
+
+
+
+
 
 .fa-solid {
     color: var(--main-color);

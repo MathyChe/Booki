@@ -17,16 +17,39 @@
 <body>
     <div class="main-container">
         <header>
-            <img src="images/logo/Booki.png" alt="Logo Booki" id="logo">
-            <ul>
-                <li><a href="#">Hébergements</a></li> 
-                <li><a href="#">Activités</a></li>
+            <img src="images/logo/Booki.png" alt="Logo Booki" id="logo"/>
+            <ul class="navbar">
+                <li  class="navitem"><a href="#">Hébergements</a></li> 
+                <li  class="navitem"><a href="#">Activités</a></li>
             </ul>
         </header>
-        <section class="infogroup">
+        <section>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-        </section>
+            <div class="searchbar">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Marseille, France"/>
+                <button type="button">Rechercher</button>
+            </div>
+            <div class="filters">
+                <ul class="filtersbar">
+                    <li class="filterstitle"><p>Filtres</p></li>
+                    <li class="filtersitem"><i class="fa-solid fa-money-bill-wave filtersicon"></i><a href="#">Économique</a></li>
+                    <li class="filtersitem"><i class="fa-solid fa-person filtersicon"></i><a href="#">Familial</a></li>
+                    <li class="filtersitem"><i class="fa-solid fa-heart filtersicon"></i><a href="#">Romantique</a></li>
+                    <li class="filtersitem"><i class="fa-solid fa-fire filtersicon"></i><a href="#">Nos Pépites</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
