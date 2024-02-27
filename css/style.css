@@ -13,6 +13,18 @@ li {
     list-style: none;
 }
 
+h2 {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 /**********HEADER**********/
 /*logo, nav bar*/
 header {
@@ -48,11 +60,18 @@ header {
     border-top: 2px #0065FC solid;
 }
 
-/**********UPPER BODY**********/
+/**********INFOGROUP**********/
 /*title, hookline, searchbar, filters, hintline*/
+.infogroup {
+margin: 35px 0;
+}
+
+.infogrouptitle p {
+    margin-top: 8px;
+}
 .searchbar {
     display:flex;
-    height: 49px;
+    height: 50px;
     width: 377px;
     align-items: center;
     margin: 35px 0 35px 0;
@@ -62,15 +81,19 @@ header {
     display:flex;
     max-height: 18px;
     max-width: 14px;
-    padding: 16px 18px 16px 18px;
-    color: initial !important;
+    padding: 17px 19px 17px 19px;
+    color: black !important;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 }
 
+form {
+    display:flex;
+}
+
 input {
     border-radius: 0%;
-    height: 49px;
+    height: 48.4px;
     width: 193.4px;
     margin: 0;
     padding: 0;
@@ -87,7 +110,7 @@ input {
 
 button {
     background-color: #0065FC;
-    height: 49px;
+    height: 50px;
     width: 132px;
     padding: 15px 16px 15px 16px;
     border: 1px #0065FC solid;
@@ -97,39 +120,65 @@ button {
     color: white;
 }
 
+.filters {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px 0;
+    width: 758px;
+}
+
 .filtersbar {
     display:flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 758px;
+    width: 689px;
     height: 50px;
 }
 
-.filterstitle {
+.filters h2 {
     font-size: 18px;
-    font-weight: 700;
+    margin-right: 15px;
 }
 
 .filtersitem {
     display: flex;
-    justify-content: space-around;
-    padding: 4px 19px 4px 19px;
+    justify-content: space-between;
+    align-items: center;
     border: 2px #D2D2D2 solid;
     border-radius: 25px;
+    font-weight: 700;
+    font-size: 17px;
+    height:46.8px;
+    margin: 0;
+    padding: 0 19px 0 19px;
+}
+
+.filtersitem a{
+    margin-left: 10px;
 }
 
 .filtersicon {
-    margin: 10px;
-    width: 22px;
-    height: 22px;
+    line-height: normal;
 }
 
+.filtersitem:hover {
+    background-color: #DEEBFF;
+}
+.hintline {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
 
-
-
-
+.fa-info::before {
+    border: 1px #D2D2D2 solid;
+    border-radius: 25px;
+    padding: 4px 7px 4px 7px;
+    vertical-align:auto;
+}
 
 .fa-solid {
     color: var(--main-color);
@@ -138,21 +187,6 @@ button {
 body {
     display: flex;
     justify-content: center;
-}
-
-.infogroup {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 52px;
-}
-
-h1 {
-    margin: 0;
-}
-
-p {
-    margin: 0;
 }
 
 .main-container {
