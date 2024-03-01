@@ -13,21 +13,9 @@ li {
     list-style: none;
 }
 
-ul {
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
-}
-
-h2 {
-    margin: 0;
-}
-
-h1 {
-    margin: 0;
-}
-
-p {
-    margin: 0;
 }
 
 /**********HEADER**********/
@@ -182,7 +170,7 @@ button {
     border: 1px #D2D2D2 solid;
     border-radius: 25px;
     padding: 4px 7px 4px 7px;
-    vertical-align:auto;
+    margin-right: 10px;
 }
 
 .fa-solid {
@@ -347,6 +335,44 @@ a {
     margin-bottom: 5px;
 }
 
+/**********ACTIVITES**********/
+/*activités cards*/
+.activites {
+    width: 100%;
+    height: 559px;
+    padding-top: 35px;
+}
+
+.activites-title {
+    padding: 30px;
+}
+
+.activites-cards {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.activites-cards .card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 439px;
+    width: 297px;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+    height: 59px;
+}
+
 /**********FOOTER**********/
 /*nav lists*/
 
@@ -365,6 +391,7 @@ footer {
 
 .footer-list {
     width: 33.33%;
+    padding-left: 20px;
 }
 
 .nav-footer-item {
