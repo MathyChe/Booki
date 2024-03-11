@@ -23,23 +23,22 @@ body, h1, h2, h3, p, ul {
 header {
     display: flex;
     justify-content: space-between;
-    width: auto;
+    width: 100%;
     height: 79px;
-    margin-bottom: 30px;
 }
 
 #logo {
-    display: flex;
-    padding: 30px 0 30px 0;
+    height: 19px;
+    padding: 30px 0;
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
-    width: 244px;
-    height: 35px;
-    margin: 0;
+    align-items: end;
+    height: 50%;
     padding-left: 50px;
+    gap: 68px;
 }
 
 .navitem{
@@ -56,7 +55,7 @@ header {
 /**********INFOGROUP**********/
 /*title, hookline, searchbar, filters, hintline*/
 .infogroup {
-margin: 35px 0;
+margin: 30px 0 35px 0;
 }
 
 .infogrouptitle p {
@@ -340,16 +339,22 @@ a {
 .activites {
     width: 100%;
     height: 559px;
-    padding-top: 35px;
+    margin-top: 35px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .activites-title {
-    padding: 30px;
+    padding-bottom: 30px;
+}
+
+.activites-cards a {
+    width: 25%;
 }
 
 .activites-cards {
     display:flex;
-    justify-content: space-evenly;
+    gap: 30px;
 }
 
 .activites-cards .card {
@@ -357,7 +362,6 @@ a {
     flex-direction: column;
     padding: 0;
     height: 439px;
-    width: 297px;
 }
 
 .activites-cards img {
@@ -384,7 +388,7 @@ footer {
     margin-top: 35px;
 }
 
-.footer-list h2 {
+.footer-list h3 {
     margin-top: 20px;
     font-size: 18px;
 }
@@ -406,6 +410,16 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filters {
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .filters h2 {
+        padding-bottom: 20px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -435,6 +449,18 @@ footer {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites {
+        height: 390px;
+    }
+    
+    .activites-cards .card {
+        height: 270px;
+    }
+
+    .activites-cards img {
+        height: 200px;
     }
 }
 
