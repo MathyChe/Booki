@@ -634,4 +634,13 @@ footer {
         width: 100%;
         padding: 0;
     }
+/*smallest devices (phones, less than 320px)*/
+
+    .infogrouptitle h1 {
+        font-size: 20px;
+    }
+
+    .filtersitem a {
+        font-size: 12px;
+    }
 }
